@@ -24,6 +24,9 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            "control = control_node.move_base:main",
+            "get_odom = control_node.odom_callback:main",
+            "img_point = control_node.perception:main"
         ],
     },
 )
